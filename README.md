@@ -2,7 +2,7 @@
 
 > **To get started:** Clone this repository and all its [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) dependencies using:
 > 
->     git clone --recursive https://github.com/alecjacobson/computer-graphics-bounding-volume-hierarchy.git
+>     git clone --recursive https://github.com/dilevin/computer-graphics-bounding-volume-hierarchy.git
 >
 > **Do not fork:** Clicking "Fork" will create a _public_ repository. If you'd like to use GitHub while you work on your assignment, then mirror this repo as a new _private_ repository: https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public-repository-private
 
@@ -290,7 +290,7 @@ references as per academic honesty policies.
 
 Intersect a ray with a triangle (feel free to
 [crib](https://en.wiktionary.org/wiki/crib#Verb) your solution from the [ray
-casting](https://github.com/alecjacobson/computer-graphics-ray-casting)).
+casting](https://github.com/dilevin/computer-graphics-ray-casting)).
 
 ### `src/ray_intersect_triangle_mesh_brute_force.cpp`
 
