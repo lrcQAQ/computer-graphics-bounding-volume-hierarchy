@@ -12,6 +12,12 @@
 #include <iomanip> // std::setw
 #include <memory> // std::shared_ptr
 
+#if defined(WIN32) || defined(_WIN32)
+#define PATH_SEPARATOR std::string("\\")
+#else
+#define PATH_SEPARATOR std::string("/")
+#endif
+
 int main(int argc, char * argv[])
 {
   /////////////////////////////////////////////////////////////////////////////
@@ -21,7 +27,7 @@ int main(int argc, char * argv[])
   // Read in a triangle mesh
   Eigen::MatrixXd VA;
   Eigen::MatrixXi FA;
-  igl::read_triangle_mesh(argc>1?argv[1]:"../data/knight.obj",VA,FA);
+  igl::read_triangle_mesh(argc>1?argv[1]:".."+PATH_SEPARATOR+"data"+PATH_SEPARATOR+"knight.obj",VA,FA);
   std::cout<<"  |VA| "<<VA.rows()<<"  "<<std::endl;
   std::cout<<"  |FA| "<<FA.rows()<<"  "<<std::endl<<std::endl;
   Eigen::MatrixXd VB;
